@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory game</title>
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1 id="name">Name</h1>
+    <div class="startgame">
+        <button id="start">Start Game</button>
+    </div>
+    <div class="startgame" id="gameover">
+        <div class="box">
+            <h2>You Lost !</h2>
+        
+            <button id="restart">Try Again</button>
+        </div>
+    </div>
+    <div class="nextlevel">
+        <div class="box">
+            <h2 id="levelno">Level Completed !!</h2>
+            <p id="starsstat">★★★★★</p>
+            <p id="score">Score : 23</p>
+            <div class="stat">
+                <p id="wrongTries">WrongTries : 12</p>
+                <p id="time">Time : 01:30</p>
+            </div>
+            
+            <button id="level">Next Level</button>
+        </div>
+    </div>
+    <div class="info">
+        <div class="stars">
+            
+            <p><span id="stars">★★★★★</span></p>
+        </div>
+        <div class="tries">
+            <span class="triesno">0</span>
+            <p>Wrong Tries</p>
+        </div>
+        <div class="Level">
+            <span class="levelno">1</span>
+            <p>Level</p>
+        </div>
+        <div class="time">
+            <span id="timer"> 05:00</span>
+            <p>Time</p>
+        </div>
+    </div>
+    <div class="game">
+        <div class="game-block" data-album = "in Rainbows">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - In Rainbows, Cover art.webp" alt="">
+            </div>
+        </div>
+        
+        <div class="game-block" data-album = "in Rainbows">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - In Rainbows, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Kid A">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - Kid A, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Kid A">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - Kid A, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "HTTT">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - Hail to the Thief, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "HTTT">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - Hail to the Thief, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "TNA">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/The Strokes - The New Abnormal, Cover art.webp" alt="">
+            </div>
+        </div>
+        
+        <div class="game-block" data-album = "TNA">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/The Strokes - The New Abnormal, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "OKC">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - OK Computer, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "OKC">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - OK Computer, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "MBDTF">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Kanye West - My Beautiful Dark Twisted Fantasy, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "MBDTF">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Kanye West - My Beautiful Dark Twisted Fantasy, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Currents">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Tame Impala - Currents, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Currents">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Tame Impala - Currents, Cover art.webp" alt="">
+            </div>
+        </div>
+        
+        <div class="game-block" data-album = "Loveless">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/My Bloody Valentine - Loveless, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Loveless">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/My Bloody Valentine - Loveless, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Lonerism">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Tame Impala - Lonerism, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Lonerism">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Tame Impala - Lonerism, Cover art.webp" alt="">
+            </div>
+        </div>
+        
+        
+        
+        <div class= "game-block" data-album = "saw">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Aphex Twin - Selected Ambient Works 85-92, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "saw">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Aphex Twin - Selected Ambient Works 85-92, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Grace">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Jeff Buckley - Grace, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Grace">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Jeff Buckley - Grace, Cover art.webp" alt="">
+            </div>
+        </div>
+        
+        <div class="game-block" data-album = "Graduation">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Kanye West - Graduation, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Graduation">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Kanye West - Graduation, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "the college dropout">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Kanye West - The College Dropout, Cover art.webp" alt="">
+            </div>
+        </div>
+        
+        <div class="game-block" data-album = "the college dropout">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Kanye West - The College Dropout, Cover art.webp" alt="">
+            </div>
+        </div>
+        
+        
+        <div class="game-block" data-album = "Madvillainy">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Madvillain - Madvillainy, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Madvillainy">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Madvillain - Madvillainy, Cover art.webp" alt="">
+            </div>
+        </div>
+        
+        <div class="game-block" data-album = "DSOTM">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Pink Floyd - The Dark Side of the Moon, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "DSOTM">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Pink Floyd - The Dark Side of the Moon, Cover art.webp" alt="">
+            </div>
+        </div>
+        
+        <div class="game-block" data-album = "AMSP">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - A Moon Shaped Pool, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "AMSP">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - A Moon Shaped Pool, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Amnesiac">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - Amnesiac, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "Amnesiac">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/Radiohead - Amnesiac, Cover art.webp" alt="">
+            </div>
+        </div>
+        
+        
+        <div class="game-block" data-album = "the queen is dead">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/The Smiths - The Queen Is Dead, Cover art.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-album = "the queen is dead">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/The Smiths - The Queen Is Dead, Cover art.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+    </script>
+</body>
+</html>
