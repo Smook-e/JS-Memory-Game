@@ -133,7 +133,7 @@ function resetGame(lost = false) {
   }
   
   let lvlno = parseInt(level.innerHTML);
-  let blocksno;
+  let blocksno = 8;
   //levels
   if (lvlno > 1 && lvlno < 3) {
     blocksno = 12;
