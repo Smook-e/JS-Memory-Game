@@ -86,7 +86,7 @@ function checkMatchedBlocks(firstBlock, secondBlock) {
     firstBlock.classList.remove("noclicking");
     secondBlock.classList.remove("noclicking");
     }, duration);
-    if (parseInt(triesElement.innerHTML) === 3) {
+    if (parseInt(triesElement.innerHTML) === 15) {
       setTimeout(() => {
         lost();
       }, duration);
